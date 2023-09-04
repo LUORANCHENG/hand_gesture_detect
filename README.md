@@ -1,6 +1,6 @@
 # 基于Mediapipe实现的手势识别控制电脑音量
 
-目录：
+## 目录：
 
 - [前言](#section1)
 - [为什么选择MediaPipe?](#section2)
