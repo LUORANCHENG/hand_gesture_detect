@@ -23,6 +23,11 @@ opencv这个库相信大家都很熟悉，所以这里不做过多的介绍
 
 MediaPipe是由Google开发的一个开源框架，用于构建基于机器学习的多媒体处理应用程序。它提供了一系列预训练的机器学习模型和工具，可以用于实现各种计算机视觉和媒体处理任务，例如人脸检测、手势识别、姿势估计、实时物体跟踪、手部追踪等等。
 
+效果演示：
+
+https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442-4986-bac3-d453f6096dae
+
+
 
 ## 为什么选择MediaPipe? <a name="section2"></a>
 
