@@ -55,7 +55,9 @@ https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442
 - 在实时跟踪场景中，我们从前一帧的关键点预测中得出一个边界框，作为下一帧的输入，从而避免在每一帧上都使用手掌检测的模型。而是能够用上一帧关键点检测的结果预测出下一帧手掌的区域；我们只有当是第一帧图像或者没有检测到手部关键点的时候，才重新启动手掌检测的模型。这样就可以大大节省时间和节省性能。
 
 手掌检测模型的模型架构
-插入图片：
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/%E6%89%8B%E9%83%A8%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B.png" width="700" >
+</div>
 
 从figure2中我们可以看出手掌检测模型是一个编码解码器，中间还有一些跨层连接。
 
@@ -71,9 +73,15 @@ https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442
 
 3.我们最小化的函数是一个名为focal-loss的损失函数。
 
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/focal%20loss.png" width="600" >
+</div>
+
 关键点检测的模型：
 
-插入图片：
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/%E6%89%8B%E9%83%A8%E5%85%B3%E9%94%AE%E7%82%B9%E6%A3%80%E6%B5%8B.png" width="700" >
+</div>
 
 在检测出手掌后，就可以对手部的关键点进行检测
 
@@ -123,11 +131,17 @@ https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442
 
 注：MSE称为均方误差，是一种常用于回归问题的损失函数，用于衡量预测值与真实值之间的差异程度。值越小，代表模型性能越好。其公式如下：
 
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/MSE.png" width="500" >
+</div>
 
 
 MSE计算方法是将每个样本的预测值与真实值之差的平方求和，然后再取平均值。这样做可以使较大的误差对损失的贡献更显著，因为误差取平方后会放大。
 
 ### 4.整体实现流程图
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/%E6%B5%81%E7%A8%8B%E5%9B%BE.png" width="1000" >
+</div>
 
 
 
