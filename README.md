@@ -127,6 +127,8 @@ https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442
 
 MSE计算方法是将每个样本的预测值与真实值之差的平方求和，然后再取平均值。这样做可以使较大的误差对损失的贡献更显著，因为误差取平方后会放大。
 
+### 4.整体实现流程图
+
 
 
 ## 使用训练好的模型进行手势检测 <a name="section5"></a>
