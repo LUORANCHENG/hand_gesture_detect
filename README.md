@@ -103,6 +103,10 @@ https://github.com/LUORANCHENG/hand_gesture_detect/assets/80999506/34e62cdc-c442
 
 - 电脑生成的手部数据集：这个数据集主要是为了获取真实的相对于手腕的深度信息的。这个数据集包含了10k张图片，并且背景的光照变化非常大，拍摄角度也是非常多变的。
 
+<div align="center">
+<img src="https://github.com/LUORANCHENG/hand_gesture_detect/blob/main/picture/%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%B7%E4%BE%8B.png" width="500" >
+</div>
+
 对于训练手掌检测模型，我们只使用真实世界采集的数据集，这已经足够定位手的位置并且提供非常高的鲁棒性。
 
 对于训练手部关键点模型，我们使用的是所有的数据集。
